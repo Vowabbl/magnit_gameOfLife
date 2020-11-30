@@ -10,11 +10,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Table.sql = Table.sql
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Задание SQL", "Задание SQL", "{F886C765-FB1B-430C-A9C6-BCAA58C719C3}"
-	ProjectSection(SolutionItems) = preProject
-		..\..\..\Desktop\Магнит тест.sql = ..\..\..\Desktop\Магнит тест.sql
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
