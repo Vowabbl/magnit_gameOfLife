@@ -5,13 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GameOfLife.Models"
         mc:Ignorable="d"
-        Title="Симулятор вселенной" Height="450" Width="800">
+        Title="Симулятор вселенной" Height="Auto" Width="Auto">
     <DockPanel>
         <Menu DockPanel.Dock="Top">
             <MenuItem Header="Г. Меню">
                 <MenuItem Header="Новая вселенная" Click="ResetUniverse"/>
                 <MenuItem Header="Сохранить вселенную" Click="SaveToDB"/>
-                <MenuItem Header="Загрузить вселенную" Click="LoadFromDB"/>
+                <MenuItem Header="Загрузить/удалить вселенную" Click="LoadFromDB"/>
             </MenuItem>
             <MenuItem Header="Создать новое поколение" Click="AdvanceEvolution" />
         </Menu>

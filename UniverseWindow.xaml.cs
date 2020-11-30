@@ -119,6 +119,8 @@ namespace GameOfLife
                     db.GOLDatas.Add(data);
                     db.SaveChanges();
                 }
+                else
+                    MessageBox.Show("Данное поколение уже есть в базе!", "Повторение!", MessageBoxButton.OK);
             }
         }
 
@@ -129,7 +131,7 @@ namespace GameOfLife
         {
             UniverseSelectWindow universeSelect = new UniverseSelectWindow();
 
-            if(universeSelect.ShowDialog() != true && universeSelect.jsonArray != "")
+            if(universeSelect.ShowDialog() != true && !String.IsNullOrEmpty(universeSelect.jsonArray))
             {
                 cells = JsonConvert.DeserializeObject<bool[,]>(universeSelect.jsonArray);
             }

@@ -40,6 +40,7 @@ namespace GameOfLife
                     {
                         db.GOLDatas.Attach((GOLData)UniverseList.SelectedItem);
                         db.GOLDatas.Remove((GOLData)UniverseList.SelectedItem);
+                        db.SaveChanges();
                         UniverseList.ItemsSource = db.GOLDatas.ToList();
                     }
                 }

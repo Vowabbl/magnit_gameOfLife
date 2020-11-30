@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GameOfLife"
         mc:Ignorable="d"
-        Title="Выберите период (Нажмите правой клавишей мыши чтобы удалть)" Height="450" Width="800">
+        Title="Выберите период (Нажмите правой клавишей мыши чтобы удалить)" Height="450" Width="800">
     <Grid>
         <ListView Name ="UniverseList" ScrollViewer.VerticalScrollBarVisibility="Visible" Grid.ColumnSpan="4" Grid.Row="1" DisplayMemberPath="stateDate" Background="White" MouseLeftButtonUp="UniverseList_MouseLeftButtonUp" MouseRightButtonUp="UniverseList_MouseRightButtonUp"/>
     </Grid>
