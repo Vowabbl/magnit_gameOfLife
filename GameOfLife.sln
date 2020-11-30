@@ -5,6 +5,11 @@ VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameOfLife", "GameOfLife.csproj", "{092F42E8-2666-4253-B0A3-D5172D35159D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7D7EA297-5E93-407E-B61F-3A6E310546B6}"
+	ProjectSection(SolutionItems) = preProject
+		Table.sql = Table.sql
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
