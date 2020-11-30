@@ -1,0 +1,35 @@
+﻿<Window x:Class="GameOfLife.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GameOfLife"
+        mc:Ignorable="d"
+        Title="Вход" MinHeight="225" MaxHeight="225" Width="456.834" >
+    <Grid Margin="10,10,10,10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="125"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="50"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition MaxHeight="25"/>
+            <RowDefinition MaxHeight="25"/>
+            <RowDefinition MaxHeight="25"/>
+            <RowDefinition MaxHeight="25"/>
+            <RowDefinition MaxHeight="25"/>
+        </Grid.RowDefinitions>
+
+        <Label Content="Сервер" Grid.Row="0"/>
+        <Label Content="Имя пользователя" Grid.Row="1"/>
+        <Label Content="Пароль" Grid.Row="2"/>
+        <Label Content="База" Grid.Row="3"/>
+
+
+        <ComboBox Grid.Row="0" Margin="0,0,0,5" Grid.Column="1" Name="Servers" Grid.ColumnSpan="2"/>
+        <TextBox Grid.Row="1" Margin="0,0,0,5" Grid.Column="1" Name="Username" Grid.ColumnSpan="2"/>
+        <TextBox Grid.Row="2" Margin="0,0,0,5" Grid.Column="1" Name="Pass" Grid.ColumnSpan="2"/>
+        <TextBox Grid.Row="3" Margin="0,0,0,5" Grid.Column="1" Name="Database" Grid.ColumnSpan="2"/>
+        <Button Name="Connect" Content="ОК" Grid.Column="2" Grid.Row="4" Click="Connect_Click"/>
+    </Grid>
+</Window>
